@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+hello world
+<ul>
+{{range .list}}
+    <li>{{.Name}}</li>
+{{end}}
+</ul>
+
+<ul>
+{{range $key,$val := .maplist}}
+    <li>{{$key}}={{$val}}</li>
+{{end}}
+</ul>
+</body>
+</html>
